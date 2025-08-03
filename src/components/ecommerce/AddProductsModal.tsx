@@ -231,7 +231,7 @@ export default function AddProductModal({
             name="images"
             rules={[
               {
-                validator: async (_, value) => {
+                validator: async (_) => {
                   if (!imageUrl) {
                     throw new Error("Please upload an image");
                   }
