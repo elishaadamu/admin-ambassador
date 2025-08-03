@@ -20,20 +20,10 @@ interface Product {
   price: number;
 }
 
-interface Submission {
-  id: string;
-  products: Product[];
-  quantity: number;
-  amount: number;
-  status: "pending" | "approved" | "rejected";
-  createdAt: string;
-}
-
 export default function Promotions() {
   const [form] = Form.useForm();
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const [paymentModalVisible, setPaymentModalVisible] = useState(false);
-  const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
 
   // Table columns for submissions
   const submissionColumns = [

@@ -35,7 +35,7 @@ export default function Products() {
   const [showPerformanceModal, setShowPerformanceModal] = useState(false);
   const [showSGListModal, setShowSGListModal] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [statusFilter, setStatusFilter] = useState("");
+  const [statusFilter] = useState("");
   const [selectedTimeframe, setSelectedTimeframe] = useState<"day" | "month">(
     "day"
   );

@@ -346,7 +346,7 @@ export default function Tickets() {
       title: "Ticket ID",
       dataIndex: "id",
       key: "id",
-      render: (id, record) => (
+      render: (record) => (
         <span className="font-medium text-xs dark:text-white">
           {record.ticketId}
         </span>

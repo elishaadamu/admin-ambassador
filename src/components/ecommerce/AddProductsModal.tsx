@@ -5,12 +5,11 @@ import {
   Input,
   Select,
   Button,
-  message,
   Upload,
   InputNumber,
   notification,
 } from "antd";
-import type { RcFile, UploadFile } from "antd/es/upload/interface";
+import type { RcFile } from "antd/es/upload/interface";
 import {
   PlusOutlined,
   CloudServerOutlined,
@@ -144,7 +143,6 @@ export default function AddProductModal({
     "image/png",
     "image/webp",
   ];
-  const maxFileSize = 0.5 * 1024 * 1024; // 500KB
 
   // Modified Form.Item for single image
   return (

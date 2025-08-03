@@ -29,7 +29,7 @@ interface ProductTableProps {
 }
 
 function ProductTable({ products, loading }: ProductTableProps) {
-  const [api, contextHolder] = notification.useNotification();
+  const [contextHolder] = notification.useNotification();
 
   const formatDate = (dateString: string) => {
     if (!dateString) {
